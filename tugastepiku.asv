@@ -1,0 +1,25 @@
+I = imread('E:/PENGOLAHAN CITRA DIGITAL/CITRA/rice.png');
+U = imread('E:/PENGOLAHAN CITRA DIGITAL/CITRA/rice.png');
+A = imread('E:/PENGOLAHAN CITRA DIGITAL/CITRA/rice.png');
+E = imread('E:/PENGOLAHAN CITRA DIGITAL/CITRA/rice.png');
+
+canny  = edge(I,'canny');
+sobel  = edge(U,'sobel');
+robert = edge(I,'roberts');
+prewit = edge(I,'prewitt');
+
+subplot(2,2,1);
+imshow(canny);
+title('Citra Canny');
+
+subplot(2,2,2);
+imshow(sobel);
+title('Citra Sobel');
+
+subplot(2,2,3);
+imshow(robert);
+title('Citra Robert');
+
+subplot(2,2,4);
+imshow(canny);
+title('Citra Prewit');
