@@ -7,7 +7,7 @@ prewit = edge(I,'prewitt');
 
 subplot(2,2,1);
 imshow(canny);
-title('Citra Canny');
+title('Citra  Canny');
 
 subplot(2,2,2);
 imshow(sobel);
